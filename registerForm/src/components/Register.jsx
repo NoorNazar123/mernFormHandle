@@ -13,7 +13,6 @@ const Register = () => {
 
   const handleChange = (e) => {
     if (e.target.type === "file") {
-      // For file input, store the file directly
       setFormData({ ...formData, avatar: e.target.files[0] });
     } else {
       setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -86,14 +85,16 @@ const Register = () => {
             className="w-full px-3 py-2 border rounded"
           />
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
-        >
-          Register
-        </button>
+        <Link to="/login">
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+          >
+            Register
+          </button>
+        </Link>
         <p className="mt-4 text-center text-gray-600">
-          Already have an account?{" "}
+          Already have an account?
           <Link to="/login" className="text-blue-500 hover:underline">
             Login here
           </Link>
