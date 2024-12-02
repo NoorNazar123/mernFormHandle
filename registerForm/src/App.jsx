@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
 
 const App = () => {
   return (
-    <div className="bg-gray-300">
+    <div>
       <Header />
+      <HeroSection />
     </div>
   );
 };

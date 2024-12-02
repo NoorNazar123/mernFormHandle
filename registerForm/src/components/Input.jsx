@@ -6,7 +6,7 @@ const Input = ({ label, type, placeholder, value, onChange, name }) => {
       </label>
       <input
         type={type}
-        name={name} // Ensure the 'name' prop is passed down here
+        name={name}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
